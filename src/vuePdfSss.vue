@@ -10,12 +10,9 @@
 
 		if ( typeof window !== 'undefined' && 'Worker' in window ) {
 
-			var PdfjsWorker = require('./pdfWorker.js');
-			var PdfjsWorker2 = require('worker-loader!pdfjs-dist/es5/build/pdf.worker.js');
-			console.log(PdfjsWorker2,'PdfjsWorker2');
-			console.log(PdfjsWorker,'PdfjsWorker');
-			console.log(PdfjsWorker.default,'PdfjsWorker');
+			var PdfjsWorker = require('worker-loader!pdfjs-dist/es5/build/pdf.worker.js');
 			PDFJS.GlobalWorkerOptions.workerPort = new PdfjsWorker();
+			PDFJS.workerSrc = "./pdfWorker.js"
 		}
 	}
 
