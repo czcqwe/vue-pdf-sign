@@ -1,6 +1,6 @@
 {
   "name": "vue-z-pdf-sign",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "vue.js pdf viewer",
   "main": "src/vuePdfNoSss.vue",
   "scripts": {},
